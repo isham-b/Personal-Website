@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 
-/*---------------------------- VARIABLE CSS --------------------------------- */
+/*---------------------------- VARIABLES --------------------------------- */
 :root {
     --header-height: 3rem;
 
@@ -11,7 +11,7 @@
     /*----HSL Colours----*/
     --first-colour: hsl(var(--hue-colour), 75%, 55%); 
     --first-colour-second: hsl(var(--hue-colour), 75%, 55%);
-    --first-colour-alt: hsl(var(--hue-colour), 65%, 50%);
+    --first-colour-alt: hsl(var(--hue-colour), 65%, 32%);
     --first-colour-lighter: hsl(var(--hue-colour), 80%, 60%);
     --title-colour: hsl(var(--hue-colour), 18%, 25%);
     --text-colour: hsl(var(--hue-colour), 18%, 45%);
@@ -153,4 +153,96 @@ img {
 .grid {
     display: grid;
     gap: 1.5rem;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-colour);
+}
+
+
+
+
+/*---------------------------- NAV --------------------------------- */
+.nav {
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.nav_logo,
+.nav_toggle {
+    color: var(--title-colour);
+    font-weight: var(--font-medium);
+}
+
+.nav_logo:hover,
+.nav_toggle:hover,
+.nav_link:hover {
+    color: var(--first-colour);
+}
+
+.nav_toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+    .nav_menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-colour);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: 0.3s;
+    }
+}
+
+.nav_list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.nav_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-colour);
+    font-weight: var(--font-medium);
+}
+
+
+.nav_icon {
+    font-size: 1.2rem;
+}
+
+.nav_close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font: 1.5rem;
+    cursor: pointer;
+    color: var(--first-colour);
+}
+
+.nav_close:hover {
+    color: var(--first-colour-alt);
+}
+
+
+
+/* Reveal Menu */
+.show_menu {
+    bottom: 0;
 }
