@@ -302,9 +302,9 @@ img {
     margin-bottom: var(--bm-2);
 }
 
-/* .home_scroll {
-
-} */
+.home_scroll {
+    display: none;
+}
 
 .home_scroll_button {
     color: var(--first-colour);
@@ -324,4 +324,30 @@ img {
 
 .home_scroll_arrow {
     font-size: 1.25rem;
+}
+
+
+/*---------------------------- BUTTONS --------------------------------- */
+.button {
+    display: inline-block;
+    background-color: var(--first-colour);
+    color: #FFF;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover {
+    background-color: var(--first-colour-alt);
+}
+
+.button_icon {
+    font-size: 1.25rem;
+    margin-left: var(--bm-0-5);
+    transition: 0.3s;
+}
+
+.button_flex {
+    display: inline-flex;
+    align-items: center;
 }
