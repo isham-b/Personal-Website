@@ -351,3 +351,18 @@ img {
     display: inline-flex;
     align-items: center;
 }
+
+
+
+/*---------------------------- ABOUT --------------------------------- */
+.about_img {
+    width: 200px;
+    border-radius: 0.5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about_desc {
+    text-align: center;
+    margin-bottom: var(--bm-2-5);
+}
