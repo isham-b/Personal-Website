@@ -248,6 +248,8 @@ img {
 
 
 
+
+
 /*---------------------------- HOME --------------------------------- */
 .home_container {
     gap: 1rem;
@@ -365,4 +367,34 @@ img {
 .about_desc {
     text-align: center;
     margin-bottom: var(--bm-2-5);
+    margin-left: var(--bm-1-5);
+    margin-right: var(--bm-1-5);
+}
+
+.about_info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--bm-2-5);
+}
+
+
+.about_info_title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-colour);
+}
+
+.about_info_name {
+    font-size: var(--tiny-font-size);
+}
+
+.about_info_title,
+.about_info_name {
+    display: block;
+    text-align: center;
+}
+
+.about_buttons {
+    display: flex;
+    justify-content: center;
 }
