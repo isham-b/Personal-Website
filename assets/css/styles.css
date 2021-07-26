@@ -398,3 +398,62 @@ img {
     display: flex;
     justify-content: center;
 }
+
+
+
+/*---------------------------- SKILLS --------------------------------- */
+.skills_container {
+    row-gap: 0;
+}
+
+.skills_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--bm-2-5);
+    cursor: pointer;
+}
+
+.skills_icon,
+.skills_arrow {
+    font-size: 2rem;
+    color: var(--first-colour);
+}
+
+.skills_icon {
+    margin-right: var(--bm-0-75);
+}
+
+.skills_arrow {
+    margin-left: auto;
+    transform: 0.4s;
+}
+
+.skills_title {
+    font-size: var(--h3-font-size);
+}
+
+.skills_subtitle {
+    font: var(--small-font-size);
+    color: var(--text-colour-light);
+}
+
+.skills_title_point {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--bm-0-5);
+}
+
+.skills_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills_bar,
+.skills_percent {
+    height: 5px;
+    border-radius: 0.25rem;
+}
+
+.skills_bar {
+    background-color: var(--first-colour-lighter);
+}
