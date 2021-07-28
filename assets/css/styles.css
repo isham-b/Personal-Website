@@ -12,7 +12,7 @@
     --first-colour: hsl(var(--hue-colour), 75%, 55%); 
     --first-colour-second: hsl(var(--hue-colour), 75%, 55%);
     --first-colour-alt: hsl(var(--hue-colour), 65%, 32%);
-    --first-colour-lighter: hsl(var(--hue-colour), 80%, 60%);
+    --first-colour-lighter: hsl(var(--hue-colour), 80%, 75%);
     --title-colour: hsl(var(--hue-colour), 18%, 25%);
     --text-colour: hsl(var(--hue-colour), 18%, 45%);
     --text-colour-light: hsl(var(--hue-colour), 18%, 65%);
@@ -428,6 +428,11 @@ img {
     transform: 0.4s;
 }
 
+.skills_list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
 .skills_title {
     font-size: var(--h3-font-size);
 }
@@ -456,4 +461,82 @@ img {
 
 .skills_bar {
     background-color: var(--first-colour-lighter);
+}
+
+.skills_percent {
+    display: block;
+    background-color: var(--first-colour);
+}
+
+.skills_python {
+    width: 90%;
+}
+
+.skills_c {
+    width: 70%;
+}
+
+.skills_java {
+    width: 80%;
+}
+
+.skills_cs {
+    width: 70%;
+}
+
+.skills_html {
+    width: 80%;
+}
+
+.skills_css {
+    width: 80%;
+}
+
+.skills_js {
+    width: 60%;
+}
+
+.skills_office {
+    width: 80%;
+}
+
+.skills_ps {
+    width: 65%;
+}
+
+.skills_premiere {
+    width: 50%;
+}
+
+
+
+
+
+
+.skills_close .skills_list {
+    height: 0;
+    overflow: hidden;
+}
+
+.skills_open .skills_list {
+    height: max-content;
+    margin-bottom: var(--bm-2-5);
+}
+
+.skills_open .skills_arrow {
+    transform: rotate(-180deg);
+}
+
+
+/*---------------------------- QUALIFICATION --------------------------------- */
+.qual_tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--bm-2);
+}
+
+.qual_button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
 }
