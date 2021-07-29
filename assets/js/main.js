@@ -49,9 +49,15 @@
     })
 
 
+    /*---------------------------- QUALIFICATION TABS --------------------------------- */
+    const qualTabs = document.querySelectorAll("[data-target]");
+    const qualContent = document.querySelectorAll("[data-content]");
 
-
-
+    qualTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            const target = document.querySelector(tab.dataset.target);
+        })
+    })
 
 
 

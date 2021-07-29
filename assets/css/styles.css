@@ -540,3 +540,57 @@ img {
     font-weight: var(--font-medium);
     cursor: pointer;
 }
+
+.qual_button:hover {
+    color: var(--first-colour);
+}
+
+.qual_icon {
+    font-size: 1.8rem;
+    margin-right: var(--bm-0-25);
+}
+
+.qual_data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.qual_title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.qual_subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--bm-1);
+}
+
+.qual_calender {
+    font-size: var(--tiny-font-size);
+    color: var(--text-colour-light);
+}
+
+.qual_rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-colour);
+    border-radius: 50%;
+}
+
+.qual_line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-colour);
+    transform: translate(6px, -7px);
+}
+
+.qual [data-content] {
+    display: none;
+}
+
+.qual_active[data-content] {
+    display: block;
+}
