@@ -552,7 +552,7 @@ img {
 
 .qual_data {
     display: grid;
-    grid-template-columns: 1fr max-content 1fr;
+    grid-template-columns: 1fr 10% 1fr;
 }
 
 .qual_title {
@@ -563,7 +563,7 @@ img {
 .qual_subtitle {
     display: inline-block;
     font-size: var(--small-font-size);
-    margin-bottom: var(--bm-1);
+    margin-bottom: var(--bm-0-25);
 }
 
 .qual_calender {
@@ -593,4 +593,8 @@ img {
 
 .qual_active[data-content] {
     display: block;
+}
+
+.qual_button.qual_active {
+    color: var(--first-colour);
 }

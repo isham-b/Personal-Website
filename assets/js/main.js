@@ -50,15 +50,30 @@
 
 
     /*---------------------------- QUALIFICATION TABS --------------------------------- */
-    const qualTabs = document.querySelectorAll("[data-target]");
-    const qualContent = document.querySelectorAll("[data-content]");
+    const tabs = document.querySelectorAll("[data-target]");
+    const tabsContent = document.querySelectorAll("[data-content]");
 
-    qualTabs.forEach((tab) => {
+    tabs.forEach((tab) => {
         tab.addEventListener("click", () => {
+
             const target = document.querySelector(tab.dataset.target);
+
+            // Make all content inactive
+            tabsContent.forEach((content) => {
+                content.classList.remove("qual_active");
+            })
+
+            // Dispay tab content
+            target.classList.add("qual_active");
+
+            // Make all tabs inactive
+            tabs.forEach((t) => {
+                t.classList.remove("qual_active");
+            })
+
+            // Set tab as active
+            tab.classList.add("qual_active");
         })
     })
-
-
 
 }
