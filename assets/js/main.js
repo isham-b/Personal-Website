@@ -76,4 +76,45 @@
         })
     })
 
+
+
+    /*---------------------------- ABILITIES MODAL --------------------------------- */
+    const modalViews = document.querySelectorAll(".abilities_modal");
+    const modalBtns = document.querySelectorAll(".abilities_button");
+    const modalCloses = document.querySelectorAll(".abilities_modal_close");
+
+    let modal = function(modalClick) {
+        modalViews[modalClick].classList.add("active_modal");
+    }
+
+    modalBtns.forEach((button, i) => {
+        button.addEventListener("click", () => {
+            modal(i);
+        })
+    })
+
+    modalCloses.forEach((close) => {
+        close.addEventListener("click", () => {
+            modalViews.forEach((modalView) => {
+                modalView.classList.remove("active_modal");
+            })
+        })
+    }) 
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
