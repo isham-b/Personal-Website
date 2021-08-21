@@ -19,7 +19,8 @@
     --input-colour: hsl(var(--hue-colour), 75%, 90%);
     --body-colour: hsl(var(--hue-colour), 75%, 99%);
     --container-colour: #FFF;
-    
+    --scroll-bar-colour: hsl(var(--hue-colour), 10%, 90%);
+    --scroll-thumb-colour: hsl(var(--hue-colour), 10%, 80%);
     
     /*----Font Sizes----*/
     --body-font: 'Poppins', sans-serif;
@@ -81,8 +82,10 @@ body.dark_theme {
     --title-colour: hsl(var(--hue-colour), 18%, 96%);
     --text-colour: hsl(var(--hue-colour), 18%, 76%);
     --input-colour: hsl(var(--hue-colour), 30%, 15%);
-    --body-colour: hsl(var(--hue-colour), 27%, 10%);
+    --body-colour: hsl(var(--hue-colour), 40%, 10%);
     --container-colour: hsl(var(--hue-colour), 30%, 15%);
+    --scroll-bar-colour: hsl(var(--hue-colour), 10%, 50%);
+    --scroll-thumb-colour: hsl(var(--hue-colour), 10%, 37%);
 }
 
 
@@ -947,4 +950,99 @@ img {
 
 
 
+/*---------------------------- SCROLL BAR --------------------------------- */
+::-webkit-scrollbar {
+    width: 0.60rem;
+    background-color: var(--scroll-bar-colour);
+    border-radius: 0.5rem;
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-colour);
+    border-radius: 0.5rem;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-colour);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------- MEDIA QUERIES --------------------------------- */
+
+/* Small devices */
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: var(--bm-1);
+        margin-right: var(--bm-1);
+    }
+
+    .nav_menu {
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav_list {
+        column-gap: 0;
+    }
+
+    .home_content {
+        grid-template-columns: 0.25fr 3fr;
+    }
+
+    .home_blob {
+        width: 180px;
+    }
+
+    .skills_title {
+        font-size: var(--normal-font-size);
+    }
+
+    .qual_data {
+        gap: 0.5rem;
+    }
+
+    .abilities_container {
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+
+    .abilities_content {
+        padding-right: 3.5rem;
+    }
+
+    .abilities_modal {
+        padding: 0 0.5rem;
+    }
+
+    .qual_icon {
+        font-size: 1.2rem;
+    }
+
+    .qual_tabs {
+        column-gap: 1rem;
+    }
+
+}
+
+
+/* Medium devices */
