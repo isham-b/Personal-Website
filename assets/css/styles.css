@@ -79,6 +79,7 @@
 body.dark_theme {
     /*----HSL Colours----*/
     --first-colour-second: hsl(var(--hue-colour), 31%, 7%);
+    --first-colour-lighter: hsl(var(--hue-colour), 80%, 95%);
     --title-colour: hsl(var(--hue-colour), 18%, 96%);
     --text-colour: hsl(var(--hue-colour), 18%, 76%);
     --input-colour: hsl(var(--hue-colour), 30%, 15%);
@@ -760,6 +761,8 @@ img {
 
 .portfolio_img {
     width: 265px;
+    border-style: solid;
+    border-color: var(--first-colour);
     border-radius: 0.5rem;
     justify-self: center;
 }
@@ -1010,7 +1013,7 @@ img {
     }
 
     .home_blob {
-        width: 180px;
+        width: 200px;
     }
 
     .skills_title {
