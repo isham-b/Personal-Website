@@ -1234,6 +1234,17 @@ img {
         transform: translateX(-6rem);
     }
 
+    .about_info {
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        justify-content: center;
+    }
+
+    .about_info div {
+        margin-left: var(--bm-0-5);
+        margin-right: var(--bm-0-5);
+    }
+
     .abilities_container {
         grid-template-columns: repeat(2, 357px);
     }
